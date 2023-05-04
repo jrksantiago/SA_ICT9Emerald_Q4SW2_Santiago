@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 Seatwork 2</title>
+	<style type="text/css">
+		#div{
+			background-color: #17CCED ;
+		}
+
+		#text{
+			text-align: center;
+			font-family: 'Montez', cursive;
+		}
+
+		#text2{
+			font-family: 'Bigshot One', cursive;
+			text-align: center;
+		}
+
+			#text3{
+			font-family: 'Grand Hotel', cursive;
+			text-align: center;
+		}
+
+		
+
+		#table{
+			border-style: ridge;
+
+		}
+
+		
+	</style>
+</head>
+<body id="div">
+	<h1 id="text">Fahrenheight to celcius</h1>
+	
+<p id="text3"></p>
+
+
+<script>
+	const date = new Date();
+	document.getElementById("text3").innerHTML = date;
+</script>
+
+
+	<form>
+			<label id="text2">Enter Fahrenheight:</label>
+<input type="number" name="temp" id="temp" id="text2"><br>
+	<button type="submit" onclick="Compute()" id="text2">Calculate</button>
+	</form>
+
+
+<script>
+	function Compute(){
+	var temp = document.getElementById("temp").value;
+	var celsius = (Number (temp) - Number (32)) * Number (5/9);	
+
+	alert("The temperature of fahrenheight to celsius is equal to:" + celsius);
+}
+
+</script>
+
+<table border="10" id="table">
+
+	<th id="text">Description</th>
+	<th id="text">Celsius (C)</th>
+	<th id="text">Fahrenheit (F)</th><tr>
+	
+	<td id="text2">boiling point of water</td>
+	<td id="text2">100 C</td>
+	<td id="text2">212 F</td><tr>
+
+	<td id="text2">body temperature</td>
+	<td id="text2">37 C</td>
+	<td id="text2">98.6 F</td><tr>
+
+	<td id="text2">cool room temperature</td>	
+	<td id="text2">20 C</td>
+	<td id="text2">68 F</td><tr>
+
+		<td id="text2">freezing point of water</td>
+		<td id="text2">0 C</td>
+		<td id="text2">32 F</td><tr>
+
+			<td id="text2">absolute zero
+	(molecules stop moving)</td>
+	<td id="text2">-169.44444444444446</td>
+	<td id="text2">-273 C</td>
+	</table>
+	<!--http://www.appstate.edu/~goodmanjm/rcoe/asuscienceed/six6energytransfer/temperature.html-->
+</body>
+</html>
